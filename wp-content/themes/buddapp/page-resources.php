@@ -53,14 +53,14 @@ $thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 			
 						<div class="resource">
 					    	
-							<img src="<?php echo get_field('resource_image')[url] ?>" alt="<?php echo get_field('resource_image')[alt] ?>">
+							<img src="<?php echo get_field('resource_image')[url] ?>" alt="<?php echo get_field('resource_image')[ini_alter()] ?>">
 
 					    	<h3><a href="<?php echo get_field('resource_url') ?>"><?php the_title(); ?></a></h3>
 					    	
 							<?php the_content(); ?>
 
 							<?php if( !empty(get_field('button_text')) ) :  ?>
-					    	<a class="btn btn-success" href="<?php echo get_field('resource_url') ?>"><?php echo get_field('button_text') ?></a>
+					    	<a class="btn btn-success" href="<?php echo get_field('resource_url'); ?>"><?php echo get_field('button_text'); ?></a>
 
 					    <?php endif; ?>
 				    	</div>
