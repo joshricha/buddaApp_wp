@@ -23,7 +23,7 @@ get_header(); ?>
 
 
 			<div class="container">
-				<div id="row">
+				<div id="primary" class="row">
 					<main id="content" class="col-sm-8">
 									
 						<?php /* Start the Loop */ ?>
