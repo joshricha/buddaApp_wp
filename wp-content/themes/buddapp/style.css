@@ -45,6 +45,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Theme specific styles
 --------------------------------------------------------------*/
 
+.navbar-nav > li.current_page_item a,
+.navbar-nav > li.current_page_parent a {
+	color: white;
+}
 
 /* Small menu. */
 .menu-toggle,
